@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main</title>
+</head>
+<body>
+    <div class="header">
+        <h1>YOLO8 OBJECT DETECTION</h1>
+    </div>
+    <div class="webcam">
+        <a href="{{url_for('webcam')}}" class="livecam">Live Camera</a>
+    </div>
+    <div class="video">
+        <form enctype="multipart/form-data" method="post">
+            {{form.csrf_token}}
+            {{form.file.label}}
+            {{form.file(class="file")}}
+            {{form.submit(class="submit-btn")}}
+        </form>
+    </div>
+</body>
+</html>

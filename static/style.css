@@ -1,0 +1,36 @@
+body{
+    background: linear-gradient(to right,#3CB371,#ADFF2F);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.webcam{
+    padding: 30px;
+    display: flex;
+    align-items: center; /* vertically */
+    justify-content: center; /* horizontally */
+}
+.livecam{
+    background-color: aqua;
+    text-decoration: none; /* removes underline */
+    padding: 10px;
+    border-radius: 7px;
+    color: darkorchid;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.file{
+    background-color: #ADFF2F;
+    padding: 10px;
+    margin-top: 50px;
+}
+.header{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    opacity: 0.7;
+}
