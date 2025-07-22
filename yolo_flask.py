@@ -63,6 +63,7 @@ def main():
         vid = form.file.data
         special_code = uuid.uuid4().hex[:4]
         f, exe = os.path.splitext(secure_filename(vid.filename))
+        os.makedirs('./uploads', exist_ok=True)
         vid.save(os.path.join(os.path.abspath(os.path.dirname(__name__)),app.config['UPLOAD_FOLDER'],
                               f'{f}{special_code}{exe}'))
         session['video_path'] = os.path.join(os.path.abspath(os.path.dirname(__name__)),app.config['UPLOAD_FOLDER'],f'{f}{special_code}{exe}')
